@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Svelte app</title>
+
+	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link rel='stylesheet' href='/global.css'>
+	<link rel='stylesheet' href='/build/bundle.css'>
+
+	<script defer src='/build/bundle.js'></script>
+</head>
+<style>
+	html,body{
+	   overflow:hidden !important;
+	   background:#000000;
+	} 
+</style>
+
+<body>
+<div style = "">
+<div style = "display:flex;flex-direction: row;flex-wrap:wrap;">
+ <div id = "guage1" style = "border: 1px solid black;width: 200px;height: 200px;margin: 30px;">
+   <gauge-component
+     value = 30 
+     min = 0 
+     max = 50 
+     unit=KGS
+     decimals=2
+     moveChartX = 0
+     moveChartY = 0
+     commarequired = Yes
+     label="Guage 1"
+     valueColor = rgba(255,255,255,1)
+     unitColor = rgba(255,255,255,1)
+     valueposition=center
+     movevaluetoX=0
+     movevaluetoY=0
+     moveunittoX=0
+     moveunittoY=0
+     shapeCover_show=false
+     shapeCover_fill=#ffffff
+     shapeCover_stroke=#000000
+     shapeCover_shape=circle
+     shapeCover_adjustwidth=0
+     shapeCover_adjustheight=0 
+     shapeCover_reduceSize_width=150
+     shapeCover_reduceSize_height=0
+     gaugeRadius=200
+     gaugeBandHeight=25
+     moveX=0
+     moveY=30
+     movetitleX=0
+     movetitleY=-30
+     fillarc_show=true
+     fillarc_color=yellow
+     fillarc_cutarc=true
+     fillarc_angle_start=-115
+     fillarc_angle_end=-65
+     fillarc_angleadd=50
+     fillarc_angleadjust=0
+     fillarc_curvedarc_show=false
+     fillarc_curvedarc_radius=100
+     outerLayerArc_show=true
+     outerLayerArc_fill=lightgray
+     outerLayerArc_width=10
+     outerLayerArc_stroke=lightgray
+     outerLayerArc_opacity=.5
+     outerLayerArc_curvedArcRadius=100
+     ticks_show=false
+     ticks_count=50
+     ticks_color=#000000
+     ticks_opacity=.5
+     ticks_length=50
+     ticks_type=nice
+     ticks_niceDivisor=50
+     ticks_showendTicks=false
+     ticks_label_show=false
+     ticks_label_labelDecimals=2
+     ticks_label_color=#000000
+     ticks_label_opacity=.5
+     ticks_label_movetoOuter=false
+     ticks_label_movetoOuterPos=0
+     style_needle_show=false
+     style_needletype=normal
+     style_needleRadius=5
+     style_needleInnerCircleRadius=2
+     style_labeldisplaytype=percentage
+     style_needleColor_fill=rgba(0,0,0,1)
+     style_needleColor_stroke=rgba(0,0,0,1)
+     style_needleColor_strokeWidth=1
+     style_needleCircleColor_fill=rgba(255,255,255,1)
+     style_needleCircleColor_stroke=rgba(0,0,0,1)
+     style_needleCircleColor_strokeWidth=1
+     style_needleInnerCircleStyle_show=true
+     style_needleInnerCircleStyle_fill=rgba(255,255,255,.5)
+     style_needleInnerCircleStyle_stroke=rgba(0,0,0,.5)
+     style_needleInnerCircleStyle_strokeWidth=1
+     style_needleHeight=.40
+     style_startAngle=0
+     style_endAngle=180
+     style_ring_inset=0
+     margin={"left":"0","right":"0","top":"0","bottom":"0"}
+     ranges=[{"from":"0","to":"200","color":"orange","opacity":"1"},{"from":"201","to":"400","color":"white","opacity":".5"},{"from":"401","to":"500","color":"pink","opacity":".5"}]
+     reducer=false
+     animationDuration=1000
+   />
+ </div>
+ <div id = "guage2" style = "padding: 20px;border: 1px solid black;width: 200px;height: 200px;">
+   <gauge-component
+     value = 30 
+     min = 0 
+     max = 50 
+     unit=KGS
+     decimals=2
+     moveChartX = 0
+     moveChartY = 0
+     commarequired = Yes
+     label="Guage 2"
+     valueColor = rgba(255,255,255,1)
+     unitColor = rgba(255,255,255,1)
+     valueposition=center
+     movevaluetoX=0
+     movevaluetoY=0
+     moveunittoX=0
+     moveunittoY=0
+     shapeCover_show=false
+     shapeCover_fill=#ffffff
+     shapeCover_stroke=#000000
+     shapeCover_shape=circle
+     shapeCover_adjustwidth=0
+     shapeCover_adjustheight=0 
+     shapeCover_reduceSize_width=150
+     shapeCover_reduceSize_height=0
+     gaugeRadius=200
+     gaugeBandHeight=25
+     moveX=0
+     moveY=30
+     movetitleX=0
+     movetitleY=-30
+     fillarc_show=true
+     fillarc_color=yellow
+     fillarc_cutarc=false
+     fillarc_angle_start=-135
+     fillarc_angle_end=-45
+     fillarc_angleadd=90
+     fillarc_angleadjust=0
+     fillarc_curvedarc_show=false
+     fillarc_curvedarc_radius=100
+     outerLayerArc_show=true
+     outerLayerArc_fill=lightgray
+     outerLayerArc_width=10
+     outerLayerArc_stroke=lightgray
+     outerLayerArc_opacity=.5
+     outerLayerArc_curvedArcRadius=100
+     ticks_show=false
+     ticks_count=50
+     ticks_color=#000000
+     ticks_opacity=.5
+     ticks_length=50
+     ticks_type=nice
+     ticks_niceDivisor=50
+     ticks_showendTicks=false
+     ticks_label_show=false
+     ticks_label_labelDecimals=2
+     ticks_label_color=#000000
+     ticks_label_opacity=.5
+     ticks_label_movetoOuter=false
+     ticks_label_movetoOuterPos=0
+     style_needle_show=false
+     style_needletype=normal
+     style_needleRadius=5
+     style_needleInnerCircleRadius=2
+     style_labeldisplaytype=percentage
+     style_needleColor_fill=rgba(0,0,0,1)
+     style_needleColor_stroke=rgba(0,0,0,1)
+     style_needleColor_strokeWidth=1
+     style_needleCircleColor_fill=rgba(255,255,255,1)
+     style_needleCircleColor_stroke=rgba(0,0,0,1)
+     style_needleCircleColor_strokeWidth=1
+     style_needleInnerCircleStyle_show=true
+     style_needleInnerCircleStyle_fill=rgba(255,255,255,.5)
+     style_needleInnerCircleStyle_stroke=rgba(0,0,0,.5)
+     style_needleInnerCircleStyle_strokeWidth=1
+     style_needleHeight=.40
+     style_startAngle=0
+     style_endAngle=180
+     style_ring_inset=0
+     margin={"left":"0","right":"0","top":"0","bottom":"0"}
+     ranges=[]
+     reducer=false
+     animationDuration=1000
+   />
+ </div>
+ <div id = "guage3" style = "padding: 20px;border: 1px solid black;width: 200px;height: 200px;margin: 10px;">
+   <gauge-component
+     value = 1200 
+     min = 0 
+     max = 1500 
+     unit=KGS
+     decimals=2
+     moveChartX = 8
+     moveChartY = 25
+     commarequired = Yes
+     label=""
+     valueColor = rgba(0,0,0,1)
+     unitColor = rgba(255,255,255,1)
+     valueposition=top
+     movevaluetoX=0
+     movevaluetoY=-15
+     moveunittoX=0
+     moveunittoY=0
+     shapeCover_show=true
+     shapeCover_fill=#ffffff
+     shapeCover_stroke=#000000
+     shapeCover_shape=rect
+     shapeCover_adjustwidth=0
+     shapeCover_adjustheight=0 
+     shapeCover_reduceSize_width=250
+     shapeCover_reduceSize_height=100
+     gaugeRadius=200
+     gaugeBandHeight=20
+     moveX=0
+     moveY=30
+     movetitleX=0
+     movetitleY=-30
+     fillarc_show=true
+     fillarc_color=yellow
+     fillarc_cutarc=true
+     fillarc_angle_start=-135
+     fillarc_angle_end=-45
+     fillarc_angleadd=90
+     fillarc_angleadjust=0
+     fillarc_curvedarc_show=false
+     fillarc_curvedarc_radius=100
+     outerLayerArc_show=false
+     outerLayerArc_fill=lightgray
+     outerLayerArc_width=10
+     outerLayerArc_stroke=lightgray
+     outerLayerArc_opacity=.5
+     outerLayerArc_curvedArcRadius=100
+     ticks_show=false
+     ticks_count=50
+     ticks_color=#000000
+     ticks_opacity=.5
+     ticks_length=50
+     ticks_type=nice
+     ticks_niceDivisor=50
+     ticks_showendTicks=true
+     ticks_label_show=true
+     ticks_label_labelDecimals=2
+     ticks_label_color=#000000
+     ticks_label_opacity=.5
+     ticks_label_movetoOuter=true
+     ticks_label_movetoOuterPos=10
+     style_needle_show=true
+     style_needletype=normal
+     style_needleRadius=5
+     style_needleInnerCircleRadius=2
+     style_labeldisplaytype=percentage
+     style_needleColor_fill=rgba(0,0,0,1)
+     style_needleColor_stroke=rgba(0,0,0,1)
+     style_needleColor_strokeWidth=1
+     style_needleCircleColor_fill=rgba(255,255,255,1)
+     style_needleCircleColor_stroke=rgba(0,0,0,1)
+     style_needleCircleColor_strokeWidth=1
+     style_needleInnerCircleStyle_show=true
+     style_needleInnerCircleStyle_fill=rgba(255,255,255,.5)
+     style_needleInnerCircleStyle_stroke=rgba(0,0,0,.5)
+     style_needleInnerCircleStyle_strokeWidth=1
+     style_needleHeight=.40
+     style_startAngle=0
+     style_endAngle=180
+     style_ring_inset=20
+     margin={"left":"0","right":"0","top":"0","bottom":"0"}
+     ranges=[{"from":"0","to":"200","color":"blue","opacity":"1"},{"from":"201","to":"400","color":"red","opacity":"1"},{"from":"401","to":"500","color":"yellow","opacity":"1"},{"from":"501","to":"700","color":"orange","opacity":"1"}]
+     reducer=false
+     animationDuration=1000
+   />
+ </div>
+ <div id = "guage4" style = "padding: 20px;border: 1px solid black;width: 200px;height: 200px;margin: 10px;">
+   <gauge-component
+     value = 150
+     min = 0 
+     max = 1500 
+     unit=KGS
+     decimals=2
+     moveChartX = 0
+     moveChartY = 30
+     commarequired = Yes
+     label=""
+     valueColor = rgba(0,0,0,1)
+     unitColor = rgba(255,255,255,1)
+     valueposition=top
+     movevaluetoX=0
+     movevaluetoY=-15
+     moveunittoX=0
+     moveunittoY=0
+     shapeCover_show=true
+     shapeCover_fill=#ffffff
+     shapeCover_stroke=#000000
+     shapeCover_shape=rect
+     shapeCover_adjustwidth=0
+     shapeCover_adjustheight=0 
+     shapeCover_reduceSize_width=250
+     shapeCover_reduceSize_height=90
+     gaugeRadius=200
+     gaugeBandHeight=20
+     moveX=0
+     moveY=0
+     movetitleX=0
+     movetitleY=-30
+     fillarc_show=false
+     fillarc_color=yellow
+     fillarc_cutarc=true
+     fillarc_angle_start=-95
+     fillarc_angle_end=-85
+     fillarc_angleadd=-2.5
+     fillarc_angleadjust=360
+     fillarc_curvedarc_show=false
+     fillarc_curvedarc_radius=100
+     outerLayerArc_show=false
+     outerLayerArc_fill=lightgray
+     outerLayerArc_width=10
+     outerLayerArc_stroke=lightgray
+     outerLayerArc_opacity=.5
+     outerLayerArc_curvedArcRadius=100
+     ticks_show=false
+     ticks_count=50
+     ticks_color=#000000
+     ticks_opacity=.5
+     ticks_length=50
+     ticks_type=nice
+     ticks_niceDivisor=50
+     ticks_showendTicks=false
+     ticks_label_show=true
+     ticks_label_labelDecimals=2
+     ticks_label_color=#000000
+     ticks_label_opacity=.5
+     ticks_label_movetoOuter=true
+     ticks_label_movetoOuterPos=10
+     style_needle_show=true
+     style_needletype=speedometer
+     style_needleRadius=5
+     style_needleInnerCircleRadius=2
+     style_labeldisplaytype=percentage
+     style_needleColor_fill=rgba(0,0,0,1)
+     style_needleColor_stroke=rgba(0,0,0,1)
+     style_needleColor_strokeWidth=1
+     style_needleCircleColor_fill=rgba(255,255,255,1)
+     style_needleCircleColor_stroke=rgba(0,0,0,1)
+     style_needleCircleColor_strokeWidth=1
+     style_needleInnerCircleStyle_show=true
+     style_needleInnerCircleStyle_fill=rgba(255,255,255,.5)
+     style_needleInnerCircleStyle_stroke=rgba(0,0,0,.5)
+     style_needleInnerCircleStyle_strokeWidth=1
+     style_needleHeight=.30
+     style_startAngle=0
+     style_endAngle=180
+     style_ring_inset=0
+     margin={"left":"20","right":"20","top":"10","bottom":"10"}
+     ranges=[]
+     reducer=false
+     animationDuration=1000
+   />
+ </div>
+</div>
+</div>
+</body>
+</html>
